@@ -7,11 +7,11 @@
 
 1. [公共页面](https://wenhuiyang-luck.github.io/Website-demo/天猫/1-公共页面/1-公共页面.html)
 
-   |	&nbsp;[置顶导航](https://wenhuiyang-luck.github.io/Website-demo/天猫/1-公共页面/1-公共页面_置顶导航.html)	&nbsp;|	&nbsp;[搜索栏](https://wenhuiyang-luck.github.io/Website-demo/天猫/1-公共页面/1-公共页面_搜索框.html)   &nbsp;|	&nbsp;[简单搜索框](https://wenhuiyang-luck.github.io/Website-demo/天猫/1-公共页面/1-公共页面_简单搜索栏.html)   &nbsp;|	&nbsp;[页脚](https://wenhuiyang-luck.github.io/Website-demo/天猫/1-公共页面/1-公共页面_页脚.html)
+   |	&nbsp;[置顶导航](https://wenhuiyang-luck.github.io/Website-demo/天猫/1-公共页面/1-公共页面_置顶导航.html)	&nbsp;|	&nbsp;[搜索栏](https://wenhuiyang-luck.github.io/Website-demo/天猫/1-公共页面/1-公共页面_搜索框.html)   &nbsp;|	&nbsp;[简单搜索框](https://wenhuiyang-luck.github.io/Website-demo/天猫/1-公共页面/1-公共页面_简单搜索栏.html)    &nbsp;|    &nbsp;[页脚](https://wenhuiyang-luck.github.io/Website-demo/天猫/1-公共页面/1-公共页面_页脚.html)
 
 2. [首页](https://wenhuiyang-luck.github.io/Website-demo/天猫/2-首页/2-首页.html)
 
-   |	&nbsp;[导航和轮播](https://wenhuiyang-luck.github.io/Website-demo/天猫/2-首页/2-首页_导航和轮播.html)   &nbsp;|	&nbsp;[分类推荐产品](https://wenhuiyang-luck.github.io/Website-demo/天猫/2-首页/2-首页_分类和推荐产品.html)    &nbsp;|	&nbsp;[产品列表](https://wenhuiyang-luck.github.io/Website-demo/天猫/2-首页/2-首页_产品列表.html)
+   |	&nbsp;[导航和轮播](https://wenhuiyang-luck.github.io/Website-demo/天猫/2-首页/2-首页_导航和轮播.html)    &nbsp;|	&nbsp;[分类推荐产品](https://wenhuiyang-luck.github.io/Website-demo/天猫/2-首页/2-首页_分类和推荐产品.html)    &nbsp;|	&nbsp;[产品列表](https://wenhuiyang-luck.github.io/Website-demo/天猫/2-首页/2-首页_产品列表.html)
    
 3. [分类页面](https://wenhuiyang-luck.github.io/Website-demo/天猫/3-分类页面/3-分类页面.html)
    
