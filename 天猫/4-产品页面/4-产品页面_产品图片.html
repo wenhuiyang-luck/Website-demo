@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>产品页面_产品图片</title>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<script>
+	$(function() {
+		var initBigImg = false;  
+		// 监听小图片的mouseenter事件，获取小图的bigImageURL属性,把大图片的src修改为该图片
+		// 预加载，因为图片比较大，所以需要进行预加载。
+		$("img.smallImage").mouseenter(function() {
+			var bigImageURL = $(this).attr("bigImageURL");
+			$("img.bigImg").attr("src",bigImageURL);
+			$("img.smallImage").each(function () {
+            	$(this).css('border-color', 'white');
+         	});
+        	$(this).css('border-color', 'black');
+		});
+
+		// 在大图片加载好之后，根据每个小图片的bigImageURL ，创建一个Image对象，然后把这个image对象的src属性，设置为bigImageURL。 
+		// 当这个img对象加载完毕之后，再放到被隐藏的div.img4load中，从而达到预加载的效果。
+		$("img.bigImg").load(function() {
+			if(initBigImg) return;
+			$("img.smallImage").each(function() {
+				var bigImageURL = $(this).attr("bigImageURL");
+				img = new Image();
+				img.src = bigImageURL;
+				img.onload = function(){
+					$("div.img4load").append($(img));
+				};
+			});
+			initBigImg = true;
+		});
+	});
+</script>
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		font-size: 12px;
+		font-family: Arial;
+	}
+	.clearfix {*zoom:1;}
+	.clearfix:after {
+	    content:'.';
+	    display:block;
+	    height:0px;
+	    clear:both;
+	    visibility: hidden; 
+	}
+	.imgAndInfo {
+		margin: 40px 20px;
+	}
+	.imgInimgAndInfo {
+		width: 400px;
+		float: left;
+	}
+	.imgInimgAndInfo img.bigImg {
+		width: 400px;
+		height: 400px;
+		padding: 20px;
+		border: 1px solid #F2F2F2;
+	}
+	.imgInimgAndInfo .smallImageDiv {
+		width: 80%;
+		margin: 20px auto;
+	}
+	.imgInimgAndInfo img.smallImage {
+		width: 60px;
+		height: 60px;
+		border: 2px solid #fff;
+	}
+	.imgInimgAndInfo img.smallImage:hover {
+		border: 2px solid #000;
+	}
+</style>
+<body>
+	<div class="imgAndInfo clearfix">
+		<div class="imgInimgAndInfo">
+			<img width="100px" class="bigImg" src="../img/productSingle/8620.jpg">
+			<div class="smallImageDiv">
+				<img width="56px" class="smallImage" src="../img/productSingle_small/8620.jpg" bigImageURL="../img/productSingle/8620.jpg">
+				<img width="56px" class="smallImage" src="../img/productSingle_small/8619.jpg" bigImageURL="../img/productSingle/8619.jpg">
+				<img width="56px" class="smallImage" src="../img/productSingle_small/8618.jpg" bigImageURL="../img/productSingle/8618.jpg">
+				<img width="56px" class="smallImage" src="../img/productSingle_small/8617.jpg" bigImageURL="../img/productSingle/8617.jpg">
+				<img width="56px" class="smallImage" src="../img/productSingle_small/8616.jpg" bigImageURL="../img/productSingle/8616.jpg">
+			</div>
+		</div>
+		<div class="img4load hidden"></div>   
+	</div>
+</body>
+</html>

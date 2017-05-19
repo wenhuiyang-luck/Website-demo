@@ -1,0 +1,139 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-size: 12px;
+	font-family: Arial;
+}
+.clearfix {*zoom:1;}
+.clearfix:after {
+    content:'.';
+    display:block;
+    height:0px;
+    clear:both;
+    visibility: hidden; 
+}
+/*排序和价格*/
+.categoryPageDiv {
+	max-width: 1013px;
+	margin: 10px auto;
+}
+.categorySortBar {
+	background-color: #FAF9F9;
+	margin: 40px 20px 20px 20px;
+	padding: 4px;
+}
+table.categorySortBarTable {
+	border-collapse: collapse;
+	display: inline-block;
+}
+table.categorySortBarTable span.glyphicon{
+	font-size: 10px;
+}
+table.categorySortBarTable td {
+	height: 17px;
+	font-size: 12px;
+	border: 1px solid #ccc;
+	padding: 3px;
+}
+table.categorySortBarTable td.grayColumn {
+	background-color: #F1EDEC;
+}
+table.categorySortBarTable td a {
+	color: #806F66;
+}
+table.categorySortBarTable td a:hover {
+	color: #C40000;
+	text-decoration: none;
+}
+table.categorySortBarTable input {
+	border-width: 0px;
+	height: 15px;
+	width: 50px;
+}
+table.categorySortBarTable td.priceMiddleColumn {
+	width: 5px;
+	vertical-align: middle;
+	color: #ccc;
+}
+table.categorySortBarTable td:hover {
+	background-color: #F1EDEC;
+}
+
+/*产品列表*/
+.categoryProducts {
+	padding: 0px 20px 40px 20px;
+}
+.productUnit {
+	width: 225px;
+	height: 338px;
+	border: 3px solid #fff;
+	margin: 12px 5px;
+	float: left;
+}
+.productUnit:hover {
+	border: 3px solid #c40000;
+}
+.productUnitItem {
+	border: 1px solid #eee;
+	height: 100%;
+}
+.productUnitItem:hover {
+	border: 1px solid #C40000;
+}
+.productUnitItem img.productImage {
+	width: 100%;
+	height: 188px;
+}
+.productUnitItem span.productPrice {
+	font-size: 20px;
+	color: #C40000;
+	display: block;
+	padding-left: 4px;
+}
+.productUnitItem a.productLink {
+	margin: 10px 0px;
+	color: #333;
+	display: block;
+	height: 34px;
+}
+.productUnitItem a.productLink:hover {
+	text-decoration: underline;
+	color: #C40000;
+}
+.productUnitItem a.tmallLink {
+	margin: 9px 0px;
+	color: #999;
+	display: block;
+	text-decoration: underline;
+}
+.productUnitItem a.tmallLink:hover {
+	color: #C40000;
+}
+.productUnitItem .productInfo {
+	border-top: 1px solid #eee;
+	color: #999;
+}
+.productUnitItem span.productDealNumber {
+	font-weight: bold;
+	color: #B57C58;
+}
+.productUnitItem span.productReview {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+}
+.productUnitItem span.productReviewNumber {
+	font-weight: bold;
+	color: #3388BB;
+}
+.productUnitItem span.monthDeal, .productUnitItem span.productReview{
+	display: inline-block;
+    width: 90px;
+    height:29px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.productUnitItem span.wangwang{
+    padding-left: 4px;
+}

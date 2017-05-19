@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		font-size: 12px;
+		font-family: Arial;
+	}
+	a {
+		color: #999;
+	}
+	a:hover{
+		text-decoration: none;
+		color:#C40000;
+	}	
+	.clearfix {*zoom:1;}
+	.clearfix:after {
+	    content:'.';
+	    display:block;
+	    height:0px;
+	    clear:both;
+	    visibility: hidden; 
+	}
+
+	/* 置顶导航 */
+	nav {
+		background-color: #f2f2f2;
+		padding: 5px 0;
+		border-bottom: 1px solid #e7e7e7;
+	}
+	nav span, 
+	nav a {
+		color: #999;
+		margin: 0 10px;
+	}
+	nav a:hover {
+		color: #c40000;
+	}
+	nav span.redColor {
+		color: #c40000 !important;
+	}
+</style>
+<body>
+	<!-- 置顶导航 -->
+	<nav>
+		<a href="#"><span class="glyphicon glyphicon glyphicon-home redColor"></span>天猫首页</a>
+
+		<span>喵，欢迎来天猫</span>
+		<a href="#">请登录</a>
+		<a href="#">免费注册</a>
+
+		<span class="pull-right">
+			<a href="forebought.html">我的订单</a>
+			<a href="forecart.html">
+				<span class="glyphicon glyphicon-shopping-cart redColor"></span>购物车<strong>0</strong>件
+			</a>
+		</span>
+	</nav>
+</body>
+</html>

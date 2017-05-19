@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<style>
+	img.catear {
+		position: absolute;
+		height: 15px;
+		display: none;
+	}
+	.categoryWithCarousel {
+		width: 100%;
+		position: relative;
+	}
+	.categoryWithCarousel .headerbar {
+		background-color: #DD2727;
+	}
+	.categoryWithCarousel .headerbar .head {
+		width: 200px;
+		background-color: #c60a0a;
+		height: 36px;
+		line-height: 36px;
+		font-size: 16px;
+		font-weight: bold;
+		color: #fff;
+		margin-left: 20px;
+		display: inline-block;
+	}
+	.categoryWithCarousel .headerbar .rightMenu {
+		display: inline-block;
+	}
+	.categoryWithCarousel .headerbar .rightMenu span {
+		margin: 0px 20px;
+	}
+	.categoryWithCarousel .headerbar .rightMenu a {
+		font-size: 15px;
+		color: #fff;
+		text-decoration: none;
+	}
+	.categoryWithCarousel .headerbar .rightMenu img {
+		height: 30px;
+	}
+	.categoryWithCarousel .carousel-of-product {
+		height: 510px;
+		width: 1024px;
+		margin: 0 auto;
+	}
+	img .carouselImage {
+		height: 510px !important;
+	}
+	.carouselBackgroundDiv {
+		width: 100%;
+		height: 510px;
+		background-color: #E8E8E8;
+		position: absolute;
+		top: 36px;
+		z-index: -1;
+	}
+</style>
+<body>
+	<img src="../img/site/catear.png" id="catear" class="catear"/>
+	<div class="categoryWithCarousel">
+		<!-- headerbar -->
+		<div class="headerbar">
+			<div class="head">
+				<span class="glyphicon glyphicon-th-list" style="margin-left: 10px"></span>
+				<span style="margin-left: 10px">商品分类</span>
+			</div>
+			<div class="rightMenu">
+				<span><a href="#"><img src="../img/site/chaoshi.png"></a></span>
+				<span><a href="#"><img src="../img/site/guoji.png"></a></span>
+				<span><a href="#">天猫会员</a></span>
+				<span><a href="#">品牌街</a></span>
+				<span><a href="#">电器城</a></span>
+				<span><a href="#">喵鲜生</a></span>
+			</div>
+		</div>
+
+		<!-- slide -->
+		<div data-ride="carousel" class="carousel-of-product carousel slide" id="carousel-of-product">
+			<!-- indicators -->
+			<ol class="carousel-indicators">
+				<li class="active" data-slide-to="0" data-target="carousel-of-product"></li>
+				<li data-slide-to="1" data-target="carousel-of-product"></li>
+				<li data-slide-to="2" data-target="carousel-of-product"></li>
+				<li data-slide-to="3" data-target="carousel-of-product"></li>
+			</ol>
+			<!-- wrapper for slides -->
+			<div role="listbox" class="carousel-inner">
+				<div class="item active">
+					<a href=""><img src="../img/lunbo/1.jpg" class="carousel carouselImage"></a>
+				</div>
+				<div class="item">
+					<a href=""><img src="../img/lunbo/2.jpg" class="carouselImage"></a>
+				</div>
+				<div class="item">
+					<a href=""><img src="../img/lunbo/3.jpg" class="carouselImage"></a>
+				</div>
+				<div class="item">
+					<a href=""><img src="../img/lunbo/4.jpg" class="carouselImage"></a>
+				</div>
+			</div>
+		</div>
+		<div class="carouselBackgroundDiv"></div>  
+	</div>
+    <script>
+        $(function(){
+            $("div.rightMenu span").mouseenter(function(){
+                var left = $(this).position().left;
+                var top = $(this).position().top;
+                var width = $(this).css("width");
+                var destLeft = parseInt(left) + parseInt(width)/2;
+                $("img#catear").css("left",destLeft);
+                $("img#catear").css("top",top-20);
+                $("img#catear").fadeIn(500);
+                        
+            });
+            $("div.rightMenu span").mouseleave(function(){
+                $("img#catear").hide();
+            });
+            
+            var left = $("div#carousel-of-product").offset().left;
+            $("div.categoryMenu").css("left",left-20);
+            $("div.categoryWithCarousel div.head").css("margin-left",left);
+            $("div.productsAsideCategorys").css("left",left-20);
+        });
+    </script>
+</body>
+</html>

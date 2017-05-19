@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body{
+	    font-size: 12px;
+	    font-family: Arial;
+	}
+	a{
+	    color:#999;
+	}
+	a:hover{
+	    text-decoration:none;
+	    color: #C40000;
+	}
+	.clearfix {*zoom:1;}
+	.clearfix:after {
+	    content:'.';
+	    display:block;
+	    height:0px;
+	    clear:both;
+	    visibility: hidden; 
+	}
+	footer {
+		border-top:1px solid #e7e7e7;
+	}
+
+	/*footer_top*/
+	.footer_top {
+		margin-top: 0px 24px;
+		text-align: center;
+	}
+
+	/*footer_middle*/
+	.footer_middle {
+		border-top: 1px solid #e7e7e7;
+		padding-top: 30px;
+		margin: 0px 20px;
+	}
+	.footer_middle .middleColumn {
+		width: 20%;
+		float: left;
+	}
+	.footer_middle .middleColumn span {
+		color: #646464;
+		font-weight: bold;
+		font-size: 16px;
+	}
+	.footer_middle .middleColumn a {
+		display: block;
+		padding-top: 3px;
+		text-decoration: none;
+	}
+
+	/*footer_bottom*/	
+	.footer_bottom .copyright {
+		background-color: black;
+		border-top:2px solid #c40000;
+		color: white;
+		padding-left: 10px;
+	}
+	.footer_bottom .copyright .white_link span {
+		color: white;
+	}
+
+	.footer_bottom .copyright .white_link {
+		padding: 10px 0px;
+	}
+	.footer_bottom .copyright .white_link a {
+		margin: 0px 5px;
+		text-decoration: none;
+		color: white;
+	}
+	.footer_bottom .copyright .white_link a:first-child {
+		margin-left: 0px;
+	}
+	.footer_bottom .copyright .license {
+		padding-bottom: 30px;
+	}
+	.footer_bottom .copyright .license span {
+		margin-right: 65px;
+		color: #a4a4a4;
+	}
+	.footer_bottom .copyright .license .copyRightYear {
+		margin: 10px 0px;
+		color: #686868;
+	}
+
+</style>
+<body>
+<footer>
+		<div class="footer_top">
+			<a href="#"><img src="../img/site/ensure.png"></a>
+		</div>
+
+		<div class="footer_middle clearfix">
+			<div class="middleColumn">
+                <span>购物指南</span>
+                <a href="#">免费注册</a> 
+                <a href="#">开通支付宝</a> 
+                <a href="#">支付宝充值</a>
+            </div>
+            <div class="middleColumn">
+                <span>天猫保障</span>
+                <a href="#">发票保障</a> 
+                <a href="#">售后规则</a> 
+                <a href="#">缺货赔付</a>
+            </div>
+            <div class="middleColumn">
+                <span>支付方式</span>
+                <a href="#">快捷支付</a> 
+                <a href="#">信用卡</a> 
+                <a href="#">蚂蚁花呗</a>
+                <a href="#">货到付款</a>
+            </div>
+            <div class="middleColumn">
+                <span>商家服务</span>
+                <a href="#">商家入驻</a> 
+                <a href="#">商家中心</a> 
+                <a href="#">天猫智库</a>
+                <a href="#">天猫规则</a>
+                <a href="#">物流服务</a>
+                <a href="#">喵言喵语</a>
+                <a href="#">运营服务</a>
+            </div>
+            <div class="middleColumn">
+                <span>手机天猫</span>
+                <a href="#"><img src="../img/site/ma.png"></a> 
+            </div>
+		</div>
+
+		<div class="footer_bottom">
+	    	<img src="../img/site/cateye.png" class="cateye" id="cateye">
+	    	<div class="copyright">
+		        <div class="white_link">
+		            <a href="#">关于天猫</a>
+		            <a href="#">帮助中心</a>
+		            <a href="#">开放平台</a>
+		            <a href="#">诚聘英才</a>
+		            <a href="#">联系我们</a>
+		            <a href="#">网站合作</a>
+		            <a href="#">法律声明</a>
+		            <a href="#">知识产权</a>
+		            <a href="#">廉正举报</a>
+		        </div>
+		        <div class="white_link">
+		            <a href="#">阿里巴巴集团</a><span>|</span>
+		            <a href="#">淘宝网</a><span>|</span>
+		            <a href="#">天猫</a><span>|</span>
+		            <a href="#">聚划算</a><span>|</span>
+		            <a href="#">全球速卖通</a><span>|</span>
+		            <a href="#">阿里巴巴国际交易市场</a><span">|</span>
+		            <a href="#">1688</a><span>|</span>
+		            <a href="#">阿里妈妈</a><span>|</span>
+		            <a href="#">阿里云计算</a><span>|</span>
+		            <a href="#">阿里通信</a><span>|</span>
+		            <a href="#">YunOS</a><span>|</span>
+		            <a href="#">阿里旅行·去啊</a><span>|</span>
+		            <a href="#">万网</a><span>|</span>
+		            <a href="#">高德</a><span>|</span>
+		            <a href="#">优视</a><span>|</span>
+		            <a href="#">友盟</a><span>|</span>
+		            <a href="#">虾米</a><span>|</span>
+		            <a href="#">天天动听</a><span>|</span>
+		            <a href="#">来往</a><span>|</span>
+		            <a href="#">钉钉</a><span>|</span>
+		            <a href="#">支付宝</a>
+		        </div>
+		        <div class="license">
+		            <span>增值电信业务经营许可证： 浙B2-20110446</span>
+		            <span>网络文化经营许可证：浙网文[2015]0295-065号</span>
+		            <span>互联网医疗保健信息服务 审核同意书 浙卫网审【2014】6号 </span>
+		            <span>互联网药品信息服务资质证书编号：浙-（经营性）-2012-0005</span>
+		            <div class="copyRightYear">© 2003-2016 TMALL.COM 版权所有</div>
+		            <div>
+		                <img src="../img/site/copyRight1.jpg">
+		                <img src="../img/site/copyRight2.jpg">
+		            </div>
+		        </div>
+		    </div>
+    	</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>产品页面_产品详情</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		font-size: 12px;
+		font-family: Arial;
+	}
+	.clearfix {*zoom:1;}
+	.clearfix:after {
+	    content:'.';
+	    display:block;
+	    height:0px;
+	    clear:both;
+	    visibility: hidden; 
+	}
+	.productDetailDiv {
+		width: 790px;
+		margin: 40px auto;
+	}
+	.productDetailTop {
+		border: 1px solid #DFDFDF;
+		border-left-width: 0px;
+	}
+	a.selected {
+		width: 90px;
+		border-left: 1px solid #cfbfb1;
+		border-right: 1px solid #cfbfb1;
+		color: #b10000;
+		display: inline-block;
+		font-weight: bold;
+		line-height: 46px;
+		text-align: center;
+		position: relative;
+	}
+	a.selected:before {
+		content: "";
+		display: block;
+		border: 1px solid #b00000;
+		width: 90px;
+		position: absolute;
+		top: -1px;
+		margin-left: -1px;
+	}
+	a.selected:after {
+		content: "";
+		display: block;
+		border-color: #b00000 transparent transparent;
+    	border-style: solid;
+    	border-width: 5px;
+		width: 0;
+		height: 0;
+		position: absolute;
+		top: -1px;
+		left: 50%;
+		margin-left: -5px;
+	}
+	a.reviews {
+		padding: 0 20px;
+		border-right: 1px solid dotted #D2D2D2;
+		color: #333;
+	}
+	a:hover {
+		text-decoration: none;
+		color: #C40000;
+	}
+	.productDetailTop span.reviewNumber {
+		color: #3355b9;
+	}
+	.productParamter {
+		border: 1px solid #DFDFDF;
+		padding: 40px;
+	}
+	.productParamter .paramter {
+		color: #999;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+	.productParamter .parameterList span{
+		display: block;
+		width: 220px;
+		float: left;
+		padding: 8px 0px;
+		color: #666;
+	}
+	.productDetailImages img {
+		width: 790px;
+		margin: 20px 0px;
+	}
+</style>
+<body>
+	<div class="productDetailDiv" style="display: block;">
+		<div class="productDetailTop">
+			<a class="selected" href="#nowhere">商品详情</a>
+			<a class="reviews" href="#nowhere">累计评价 <span class="reviewNumber">19</span></a>
+		</div>
+		<div class="productParamter clearfix">
+			<div class="paramter">产品参数：</div>
+			<div class="parameterList">
+				<span>材质成分:  聚酯纤维100% </span>
+                <span>品牌:  Emyche/艾米秋 </span>
+                <span>货号:  129668 </span>
+                <span>尺码:  L M S XL X </span>
+                <span>上市年份季节:  2016年夏季 </span>
+                <span>颜色分类:  白色 黑色 浅蓝 </span>
+                <span>适用年龄:  18-25周岁 </span>
+			</div>
+		</div>
+		<div class="productDetailImages">
+			<img src="../img/productDetail/8626.jpg">
+			<img src="../img/productDetail/8625.jpg">         
+            <img src="../img/productDetail/8624.jpg">           
+            <img src="../img/productDetail/8623.jpg">             
+            <img src="../img/productDetail/8622.jpg">             
+            <img src="../img/productDetail/8621.jpg">
+		</div>
+	</div>
+</body>
+</html>

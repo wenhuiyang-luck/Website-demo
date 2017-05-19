@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<style>
+
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body{
+	    font-size: 12px;
+	    font-family: Arial;
+	}
+	a{
+	    color:#999;
+	}
+	a:hover{
+	    text-decoration:none;
+	    color: #C40000;
+	}
+	.clearfix {*zoom:1;}
+	.clearfix:after {
+	    content:'.';
+	    display:block;
+	    height:0px;
+	    clear:both;
+	    visibility: hidden; 
+	}
+	img.simpleLogo {
+		position: absolute;
+		left: 20px;
+		top: 50px;
+		width: 140px;
+	}
+	.simpleSearchBar {
+		background-color: #c40000;
+		width: 300px;
+		height: 40px;
+		margin: 10px 20px 40px;
+		padding: 1px;
+		display: block;
+	}
+	.simpleSearchBar input {
+		width: 225px;
+		height: 34px;
+		border: 1px solid transparent;
+		margin: 2px;
+		padding-left: 6px;
+		outline: none;
+	}
+	.simpleSearchBar button {
+		width: 60px;
+		border: 1px solid transparent;
+		background-color: #c40000;
+		color: white;
+		font-size: 14px;
+	}
+	.simpleSearchBar .searchBelow {
+		margin-top: 3px;
+		margin-left: -10px;
+	}
+	.simpleSearchBar .searchBelow a {
+		padding: 0px 10px;
+		font-size: 14px;
+	}
+
+
+</style>
+<body>
+	<a href="#nowhere">
+		<img src="../img/site/simpleLogo.png" class="simpleLogo">
+	</a>
+
+	<div class="simpleSearchBar pull-right">
+		<input type="text" name="keyword" placeholder="平衡车 原汁机">
+		<button type="button">搜天猫</button>
+		<div class="searchBelow clearfix">
+			<span><a href="#">冰箱</a><span>|</span></span>
+			<span><a href="#">空调</a><span>|</span></span>
+			<span><a href="#">女表</a><span>|</span></span>
+			<span><a href="#">男表</a><span>|</span></span>		
+			<span><a href="#">衬衫</a><span>|</span></span>			
+		</div>
+	</div>
+</body>
+</html>
