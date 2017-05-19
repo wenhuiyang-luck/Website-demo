@@ -11,7 +11,7 @@
 
 2. [首页](https://wenhuiyang-luck.github.io/Website-demo/天猫/2-首页/2-首页.html)
 
-   |	&nbsp;[导航和轮播](https://wenhuiyang-luck.github.io/Website-demo/天猫/2-首页/2-首页_导航和轮播.html)   &nbsp;|	&nbsp;[分类推荐产品](https://wenhuiyang-luck.github.io/Website-demo/天猫/2-首页/2-首页_分类和推荐产品.html)&nbsp;|	&nbsp;[产品列表](https://wenhuiyang-luck.github.io/Website-demo/天猫/2-首页/2-首页_产品列表.html)
+   |	&nbsp;[导航和轮播](https://wenhuiyang-luck.github.io/Website-demo/天猫/2-首页/2-首页_导航和轮播.html)   &nbsp;|	&nbsp;[分类推荐产品](https://wenhuiyang-luck.github.io/Website-demo/天猫/2-首页/2-首页_分类和推荐产品.html)    &nbsp;|	&nbsp;[产品列表](https://wenhuiyang-luck.github.io/Website-demo/天猫/2-首页/2-首页_产品列表.html)
    
 3. [分类页面](https://wenhuiyang-luck.github.io/Website-demo/天猫/3-分类页面/3-分类页面.html)
    
