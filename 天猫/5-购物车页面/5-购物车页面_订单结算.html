@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+	body {
+		font-size: 12px;
+		font-family: Arial;
+	}
+	.cartDiv {
+		max-width: 1013px;
+		margin: 10px auto;
+	}
+	.cartTitle button {
+		background-color: #aaa;
+		border: 1px solid #aaa;
+		color: #fff;
+		width: 53px;
+		height: 25px;
+		border-radius: 2px;
+	}
+	.cartTitlePrice {
+		color: #C40000;
+		font-size: 14px;
+		font-weight: bold;
+		margin: 0 3px 0 5px;
+	}
+	.cartFoot {
+		background-color: #E5E5E5;
+		line-height: 50px;
+		margin: 20px 0;
+		padding-left: 20px;
+	}
+	.cartFoot button {
+		background-color: #aaa;
+		border: 0px;
+		width: 120px;
+		height: 50px;
+		font-size: 20px;
+		color: #fff;
+	}
+	img.cartProductItemIfSelected, 
+	img.selectAllItem {
+		cursor: pointer;
+	}
+	.cartFoot .cartSumNumber {
+		color: #C40000;
+		font-size: 16PX;
+		font-weight: bold;
+	}
+	.cartFoot .cartSumPrice {
+		color: #C40000;
+		font-size: 20px;
+		font-weight: bold;
+	}
+	table.cartProductTable {
+		width: 100%;
+		font-size: 12px;
+	}
+	table tr.cartProductItemTR {
+		border: 1px solid #ccc;
+	}
+	table tr.cartProductItemTR td {
+		padding: 20px 20px;
+	}
+	table.cartProductTable th {
+		font-weight: normal;
+		color: #3C3C3C;
+		padding: 20px 20px;
+	}
+	table img.cartProductImg {
+		padding: 1px;
+		border: 1px solid #eee;
+		width: 80px;
+		height: 80px;
+	}
+	table.cartProductTable th.operation {
+		width: 30px;
+	}
+	table.cartProductTable .cartProductLinkOut {
+		position: relative;
+		height: 80px;
+	}
+	a.cartProductLink {
+		color: #3C3C3C;
+	}
+	a.cartProductLink:hover{
+		color: #C40000;
+		text-decoration: underline;
+	}
+	table.cartProductTable .cartProductLinkInner {
+		position: absolute;
+		bottom: 0;
+		height: 20px;
+	}
+	span.ProductOringalPrice {
+		text-decoration: line-through;
+		color: #9C9C9C;
+		display: block;
+		font-weight: bold;
+		font-size: 14px;
+	}
+	span.ProductPromotionPrice,
+	span.ProductSmallSumPrice {
+		font-size: 14px;
+		font-weight: bold;
+		color: #C40000;
+	}
+	.ChangeNumber {
+		border: 1px solid #e5e5e5;
+		width: 80px;
+	}
+	.ChangeNumber a {
+		width: 14px;
+		display: inline-block;
+		text-align:center;
+		text-decoration: none;
+	}
+	.ChangeNumber input{
+        border: 1px solid #aaa;
+        width: 42px;
+        display: inline-block;
+	}
+	
+</style>
+<div class="cartDiv">
+	<div class="cartTitle pull-right">
+		<span>已选商品(不含运费)</span>
+		<span class="cartTitlePrice">￥ 0.00</span>
+		<button class="createOrderButton" style="background-color: rgb(170, 170, 170);" disabled="disabled">结 算</button>
+	</div>
+
+	<div class="cartProductList">
+		<table class="cartProductTable">
+			<thead>
+				<tr>
+					<th class="selectAndImage">
+						<img src="../img/site/cartNotSelected.png" class="selectAllItem" selectit="false">全选
+					</th>
+					<th>商品信息</th>
+					<th>单价</th>
+					<th>数量</th>
+					<th width="120px">金额</th>
+					<th class="operation">操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="cartProductItemTR" oiid="936">
+					<td>
+						<img src="../img/site/cartNotSelected.png" oiid="936" selectit="false">
+						<a href="#nowhere" style="display:none"><img src="../img/site/cartSelected.png"></a>
+						<img width="40px" src="../img/productSingle_middle/3665.jpg" class="cartProductImg">
+					</td>
+					<td>
+						<div class="cartProductLinkOut">
+							<a class="cartProductLink" href="#nowhere">美国iRobot扫地机器人吸尘器全自动家用智能扫地机650 天猫电器城</a>
+							<div class="cartProductLinkInner">
+                                <img title="支持信用卡支付" src="../img/site/creditcard.png">
+                                <img title="消费者保障服务,承诺7天退货" src="../img/site/7day.png">
+                                <img title="消费者保障服务,承诺如实描述" src="../img/site/promise.png">
+                            </div>
+						</div>
+					</td>
+					<td>
+						<span class="ProductOringalPrice">￥235.0</span>
+                        <span class="ProductPromotionPrice">￥152.75</span>
+					</td>
+					<td>
+						<div class="ChangeNumber">
+							<span pid="365" class="hidden orderItemStock">75</span>
+							<span pid="365" class="hidden orderItemPromotePrice">5306.0</span>
+							<a href="#nowhere" class="numberMinus" pid="365">-</a>
+							<input value="4" autocomplete="off" class="orderItemNumberSetting" oiid="936" pid="365">
+							<a href="#nowhere" class="numberPlus" pid="365" stock="75">+</a>
+						</div>
+					</td>
+					<td>
+                        <span pid="365" oiid="936" class="ProductSmallSumPrice">￥5,306.00</span>
+                    </td>
+                    <td>
+                        <a href="#nowhere" oiid="936" class="deleteOrderItem">删除</a>
+                    </td>
+				</tr>
+
+				<tr class="cartProductItemTR" oiid="935">
+                    <td>
+                        <img src="../img/site/cartNotSelected.png" class="cartProductItemIfSelected" oiid="935" selectit="false">
+                        <a href="#nowhere" style="display:none"><img src="../img/site/cartSelected.png"></a>
+                        <img width="40px" src="../img/productSingle_middle/8510.jpg" class="cartProductImg">
+                    </td>
+                    <td>
+                        <div class="cartProductLinkOut">
+                            <a class="cartProductLink" href="#nowhere">阔腿裤三件套装女夏装2016新款大码雪纺时尚休闲气质棉麻九分裤潮</a>
+                            <div class="cartProductLinkInner">
+                                <img title="支持信用卡支付" src="../img/site/creditcard.png">
+                                <img title="消费者保障服务,承诺7天退货" src="../img/site/7day.png">
+                                <img title="消费者保障服务,承诺如实描述" src="../img/site/promise.png">
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="ProductOringalPrice">￥235.0</span>
+                        <span class="ProductPromotionPrice">￥152.75</span>
+                    </td>
+                    <td>
+                        <div class="ChangeNumber">
+                            <span pid="809" class="hidden orderItemStock ">17</span>
+                            <span pid="809" class="hidden orderItemPromotePrice ">152.75</span>
+                            <a href="#nowhere" class="numberMinus" pid="809">-</a>
+                            <input value="1" autocomplete="off" class="orderItemNumberSetting" oiid="935" pid="809">
+                            <a href="#nowhere" class="numberPlus" pid="809" stock="17">+</a>
+                        </div>                    
+                     </td>
+                    <td>
+                        <span pid="809" oiid="935" class="ProductSmallSumPrice">
+                        ￥152.75
+                        </span>
+                    </td>
+                    <td>
+                        <a href="#nowhere" oiid="935" class="deleteOrderItem">删除</a>
+                    </td>
+                </tr>
+			</tbody>
+		</table>		
+	</div>
+	<div class="cartFoot">
+		<img src="../img/site/cartNotSelected.png" class="selectAllItem" selected="false">
+		<span>全选</span>
+		<div class="pull-right">
+			<span>已选商品<span class="cartSumNumber"> 0</span> 件</span>
+			<span>合计(不含运费)：</span>
+			<span class="cartSumPrice">￥0.00 </span>
+			<button class="createOrderButton" style="background-color: rgb(170,170,170);" disabled="disabled">结 算</button>
+		</div>
+	</div>
+</div>
