@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../css/order.css">
+	<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="boughtDiv">
+		<div class="orderType">
+			<div class="selectedOrderType"><a href="#nowhere" orderstatus="all">所有订单</a></div>
+			<div><a href="#nowhere" orderstatus="waitPay">待付款</a></div>
+			<div><a href="#nowhere" orderstatus="waitDelivery">待发货</a></div>
+			<div><a href="#nowhere" orderstatus="waitConfirm">待收货</a></div>
+			<div><a href="#nowhere" class="noRightBorder" orderstatus="waitReview">待评价</a></div>
+			<div class="orderTypeLastOne"></div>
+		</div>
+		<div style="clear:both"></div>
+		<div class="orderListTitle">
+			<table class="orderListTitleTable">
+				<tbody>
+					<tr>
+						<td>宝贝</td>
+						<td width="100px">单价</td>
+						<td width="100px">数量</td>
+						<td width="120px">实付款</td>
+						<td width="100px">交易操作</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>

@@ -1,0 +1,71 @@
+body {
+	font-size: 12px;
+	font-family: Arial;
+}
+.simpleLogo {
+	padding: 32px 0px;
+}
+.simpleLogo img {
+	width: 190px;
+	margin-left: 365px;
+}
+img.loginBackgroundImg {
+	display: block;
+	margin: 0px auto;
+}
+.loginSmall {
+	background-color: #fff;
+	position: absolute;
+	right: 425px;
+	top: 180px;
+	width: 350px;
+	height: 400px;
+	padding: 25px 26px 20px;
+}
+.loginAcount {
+	color: #3C3C3C;
+	font-size: 16px;
+	font-weight: bold;
+}
+.loginInput {
+	border: 1px solid #CBCBCB;
+	margin: 20px 0;
+}
+.loginInput span.loginInputIcon {
+	margin: 0;
+	background-color: #CBCBCB;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+}
+span.loginInputIcon span.glyphicon {
+	font-size: 22px;
+	position: relative;
+	left: 9px;
+	top: 9px;
+	color: #606060;
+}
+.loginInput input {
+	display: inline-block;
+	border: 0px solid transparent;
+	width: 244px;
+	height: 30px;
+	position: relative;
+	left: 6px;
+	top: 4px;
+	outline: none;
+}
+.loginSmall a {
+	color: #999;
+}
+.loginSmall a:hover {
+	text-decoration: none;
+	color: #C40000;
+}
+.loginSmall button.redButton {
+	height: 42px;
+	color: #fff;
+	background-color: #C40000;
+	font-size: 14px;
+	font-weight: bold;
+}
