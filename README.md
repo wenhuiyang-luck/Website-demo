@@ -33,4 +33,4 @@
 
 ### [慕课网](https://wenhuiyang-luck.github.io/Website-demo/慕课网/index.html)
 
-### [厘米学院主页](https://wenhuiyang-luck.github.io/Website-demo/厘米学院/index.html)
+### [厘米学院主页](https://wenhuiyang-luck.github.io/Website-demo/厘米学院主页/index.html)
