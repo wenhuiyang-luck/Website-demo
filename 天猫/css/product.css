@@ -1,3 +1,4 @@
+/* 产品页面 */
 .categoryPictureInProductPageDiv {
     width: 100%;
     margin: 10px auto;
@@ -7,7 +8,8 @@
 	max-width: 1013px;
 	margin: 10px auto;
 }
-/*产品图片*/
+
+/* 产品图片 */
 .imgAndInfo {
 	margin: 40px 20px;
 }
@@ -34,7 +36,7 @@
 	border: 2px solid #000;
 }
 
-/*基本信息*/
+/* 基本信息 */
 .redColor {
 	color: #C40000;
 }
@@ -197,7 +199,7 @@
 	margin-right: 8px;
 }
 
-/*产品详情*/
+/* 产品详情 */
 .productDetailDiv {
 	width: 790px;
 	margin: 40px auto;
@@ -272,7 +274,7 @@ a:hover {
 	margin: 20px 0px;
 }
 
-/*累计评价*/
+/* 累计评价 */
 .productReviewDiv {
 	width: 790px;
 	margin: 40px auto;

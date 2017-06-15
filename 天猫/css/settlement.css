@@ -1,0 +1,116 @@
+body {
+	font-size: 12px;
+	font-family: Arial;
+}
+.cartDiv {
+	max-width: 1013px;
+	margin: 10px auto;
+}
+.cartTitle button {
+	background-color: #aaa;
+	border: 1px solid #aaa;
+	color: #fff;
+	width: 53px;
+	height: 25px;
+	border-radius: 2px;
+}
+.cartTitlePrice {
+	color: #C40000;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0 3px 0 5px;
+}
+.cartFoot {
+	background-color: #E5E5E5;
+	line-height: 50px;
+	margin: 20px 0;
+	padding-left: 20px;
+}
+.cartFoot button {
+	background-color: #aaa;
+	border: 0px;
+	width: 120px;
+	height: 50px;
+	font-size: 20px;
+	color: #fff;
+}
+img.cartProductItemIfSelected, 
+img.selectAllItem {
+	cursor: pointer;
+}
+.cartFoot .cartSumNumber {
+	color: #C40000;
+	font-size: 16PX;
+	font-weight: bold;
+}
+.cartFoot .cartSumPrice {
+	color: #C40000;
+	font-size: 20px;
+	font-weight: bold;
+}
+table.cartProductTable {
+	width: 100%;
+	font-size: 12px;
+}
+table tr.cartProductItemTR {
+	border: 1px solid #ccc;
+}
+table tr.cartProductItemTR td {
+	padding: 20px 20px;
+}
+table.cartProductTable th {
+	font-weight: normal;
+	color: #3C3C3C;
+	padding: 20px 20px;
+}
+table img.cartProductImg {
+	padding: 1px;
+	border: 1px solid #eee;
+	width: 80px;
+	height: 80px;
+}
+table.cartProductTable th.operation {
+	width: 30px;
+}
+table.cartProductTable .cartProductLinkOut {
+	position: relative;
+	height: 80px;
+}
+
+table .cartProductLinkOut a.cartProductLink:hover{
+	color: #C40000;
+	text-decoration: underline;
+}
+table.cartProductTable .cartProductLinkInner {
+	position: absolute;
+	bottom: 0;
+	height: 20px;
+}
+span.ProductOringalPrice {
+	text-decoration: line-through;
+	color: #9C9C9C;
+	display: block;
+	font-weight: bold;
+	font-size: 14px;
+}
+span.ProductPromotionPrice,
+span.ProductSmallSumPrice {
+	font-size: 14px;
+	font-weight: bold;
+	color: #C40000;
+}
+.ChangeNumber {
+	border: 1px solid #e5e5e5;
+	width: 80px;
+}
+.ChangeNumber a {
+	width: 14px;
+	display: inline-block;
+	text-align:center;
+	text-decoration: none;
+}
+.ChangeNumber input{
+    border: 1px solid #aaa;
+    width: 42px;
+    display: inline-block;
+}

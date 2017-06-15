@@ -29,7 +29,7 @@ body {
 	color: #C40000;
 }
 .orderType .selectedOrderType {
-	border-bottom: 2PX solid #C40000;
+	border-bottom: 2px solid #C40000;
 }
 .orderType .selectedOrderType a {
 	color: #C40000;
@@ -53,4 +53,111 @@ a.noRightBorder {
 }
 .orderListTitleTable td {
 	padding: 12px 0;
+}
+
+/* orderListTitle */
+table.orderListItemTable {
+	border: 2px solid #ECECEC;
+	width: 100%;
+	margin: 20px 0px;
+	font-size: 12px;
+}
+table.orderListItemTable:hover {
+	border: 2px solid #aaa !important;
+}
+table.orderListItemTable td {
+	padding: 8px 10px;
+    vertical-align: middle;
+}
+
+/* orderListItem */
+tr.orderListItemFirstTR {
+    background-color: #F1F1F1;
+}
+div.orderItemWangWangGif {
+    display: inline-block;
+    width: 67px;
+    height: 22px;
+    background-image: url(../img/site/wangwang.gif);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-attachment: scroll;
+    position: relative;
+    top: 0px;
+    left: 2px;
+}
+td.orderItemDelete {
+    text-align: right;
+}
+span.orderListItemDelete {
+    display: inline-block;
+    margin: 0 10px;
+    color: #999;
+    font-size: 16px;
+}
+div.orderItemLinkOut {
+    position: relative;
+    height: 80px;
+}
+div.orderItemLinkInner {
+    position: absolute;
+    bottom: 0;
+}
+div.orderItemOriginalPrice {
+    color: #999;
+    font-size: 14px;
+}
+div.orderItemPrice {
+    color: #3C3C3C;
+    font-size: 14px;
+}
+td.orderItemNumberTD,
+td.orderItemRealPriceTD,
+td.orderItemButtonTD {
+    text-align: center;
+}
+td.orderItemOrderInfoTD {
+    border: solid 1px #ECECEC;
+    border-top-width: 0px;
+}
+span.orderListItemNumber {
+    color: #3C3C3C;
+}
+div.orderItemRealPrice {
+    color: #3C3C3C;
+    font-size: 14px;
+    font-weight: bold;
+}
+div.orderItemPriceTransport {
+    color: #6C6C6C;
+}
+button.orderItemReview {
+    border: 1px solid #DCDCDC;
+    background-color: #fff;
+    border-radius: 2px;
+    color: #3C3C3C;
+    font-weight: bold;
+    padding: 6px 12px;
+}
+button.orderItemReview:hover {
+    border-color: #C40000;
+    color:#C40000;
+}
+button.orderListItemConfirm{
+    background-color: #66B6FF;
+    border-radius: 2px;
+    color: white;
+    font-weight: bold;
+    border-width: 0px;
+    padding: 6px 12px;
+}
+button.orderListItemConfirm:hover{
+    background-color: #118ADB;
+}
+a{
+    color:#999;
+}
+a:hover{
+    text-decoration:none;
+    color: #C40000;
 }
